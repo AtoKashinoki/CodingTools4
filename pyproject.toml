@@ -36,10 +36,10 @@ classifiers = [
 
 
 [project.urls]
-'Homepage' = 'https://github.com/AtoKashinoki/CodingToolsU3-Discard'
-'Bug Traker' = 'https://github.com/AtoKashinoki/CodingToolsU3-Discard/issues'
-'Documentation' = 'https://github.com/AtoKashinoki/CodingToolsU3-Discard'
-'Source' = 'https://github.com/AtoKashinoki/CodingToolsU3-Discard.git'
+'Homepage' = 'https://github.com/AtoKashinoki/CodingTools4'
+'Bug Traker' = 'https://github.com/AtoKashinoki/CodingTools4/issues'
+'Documentation' = 'https://github.com/AtoKashinoki/CodingTool4'
+'Source' = 'https://github.com/AtoKashinoki/CodingTools4.git'
 
 
 [project.scripts]
