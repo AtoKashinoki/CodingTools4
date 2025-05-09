@@ -5,7 +5,7 @@ This library provides several modules to facilitate Python development.
 
 ## Developing
 
-## Structural diagram
+### Structural diagram
 
 - CodingTools4
   
