@@ -35,6 +35,12 @@ This library provides several modules to facilitate Python development.
     - \_\_init__.py
     - BasicStructure.py
   
+  - Error
+    - \_\_init__.py
+    - BasicStructer.py
+    - Attribute
+    - TypeError
+  
   - Functools
     - \_\_init__.py
     - Attr.py
@@ -58,4 +64,13 @@ This library provides several modules to facilitate Python development.
 
 
 ### Schedule
-1.
+1. BasicStructure
+2. Type
+3. Annotation
+4. Wrapper
+5. Functools
+6. Command
+7. \_\_BuiltinCommand__
+8. Config
+9. Descriptor
+10. OS
