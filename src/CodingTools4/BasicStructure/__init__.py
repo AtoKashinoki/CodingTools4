@@ -1,4 +1,15 @@
 """ CodingTools4.BasicStructure
-This module provides a mechanism for managing classes based on inheritance.\n
-このモジュールは継承を前提としたクラスを管理する仕組みを提供します。
+This package provides a mechanism for managing classes based on inheritance.\n
+このパッケージは継承を前提としたクラスを管理する仕組みを提供します。
 """
+
+
+""" Execute block """
+
+
+if __name__ == '__main__':
+    from ..Error.Runtime import RuntimeError
+    raise RuntimeError(__file__)
+
+
+""" Imports """
