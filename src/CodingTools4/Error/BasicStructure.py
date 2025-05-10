@@ -1,4 +1,6 @@
 """ Error BasicStructure
+This module provides a BasicStructure for the Error class.\n
+このモジュールはErrorクラスのBasicStructureを提供します。
 """
 
 
@@ -6,7 +8,7 @@
 
 
 if __name__ == '__main__':
-    raise RuntimeError('cannot run this script')
+    raise RuntimeError(f"Cannot run '{__file__}'")
 
 
 """ Import """
