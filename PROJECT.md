@@ -39,7 +39,8 @@ This library provides several modules to facilitate Python development.
     - \_\_init__.py
     - BasicStructer.py
     - Attribute
-    - TypeError
+    - Type
+    - Runtime
   
   - Functools
     - \_\_init__.py
