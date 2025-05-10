@@ -7,6 +7,11 @@ This module provides an error mechanism.\n
 """ Execute block """
 
 
+if __name__ == '__main__':
+    from .Runtime import CannotRunError
+    raise CannotRunError(__file__)
+
+
 """
     Import
 """
