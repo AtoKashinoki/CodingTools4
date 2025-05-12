@@ -7,7 +7,7 @@ This module provides a BasicStructure for the Error class.\n
 """ Import """
 
 
-from abc import ABC
+from ..BasicStructure.Inheritance import Inheritance
 
 
 """
@@ -15,7 +15,7 @@ from abc import ABC
 """
 
 
-class Structure(Exception, ABC):
+class Structure(Inheritance, Exception):
     """ Error structure """
 
     def __init__(
@@ -49,7 +49,6 @@ def create_structure(
 
         def __init__(
                 self,
-                *_,
                 **kwargs: str
         ):
             """ Connect Structure.__init__ """

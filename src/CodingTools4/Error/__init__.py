@@ -5,5 +5,13 @@ This module provides an error mechanism.\n
 
 
 """
-    Import
+    Import tools
 """
+
+
+try:
+    from .BasicStructure import Structure
+    ...
+except ImportError as e:
+    Structure = ImportError(e)
+    ...

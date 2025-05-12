@@ -7,6 +7,21 @@ Homepage = https://github.com/AtoKashinoki/CodingTools4
 
 
 """
-    Import modules
+    Import packages
 """
 
+
+try:
+    from . import Error
+    ...
+except ImportError as e:
+    Error = ImportError(e)
+    ...
+
+
+try:
+    from . import BasicStructure
+    ...
+except ImportError as e:
+    BasicStructure = ImportError(e)
+    ...
