@@ -4,13 +4,6 @@ This module provides the BasicStructure class, which assumes inheritance.\n
 """
 
 
-""" Execute block """
-
-
-if __name__ == '__main__':
-    raise RuntimeError(f"Cannot run '{__file__}'")
-
-
 """ Imports """
 
 
