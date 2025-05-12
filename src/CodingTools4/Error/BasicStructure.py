@@ -4,13 +4,6 @@ This module provides a BasicStructure for the Error class.\n
 """
 
 
-""" Execute block """
-
-
-if __name__ == '__main__':
-    raise RuntimeError(f"Cannot run '{__file__}'")
-
-
 """ Import """
 
 
