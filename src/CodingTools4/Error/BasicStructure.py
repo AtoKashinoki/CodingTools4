@@ -1,6 +1,6 @@
 """ Error BasicStructure
 This module provides a BasicStructure for the Error class.\n
-このモジュールはErrorクラスのBasicStructureを提供します。
+このmoduleはErrorクラスのBasicStructureを提供します。
 """
 
 
