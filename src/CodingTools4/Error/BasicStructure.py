@@ -29,7 +29,7 @@ class Structure(Inheritance, Exception):
         return
 
     """ message """
-    __message__: str
+    __message__: str = None
     @property
     def message(self) -> str: return self.__message__
 
