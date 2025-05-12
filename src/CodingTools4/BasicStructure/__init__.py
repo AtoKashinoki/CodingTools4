@@ -5,3 +5,11 @@ This package provides a mechanism for managing classes based on inheritance.\n
 
 
 """ Imports """
+
+
+try:
+    from .Inheritance import Inheritance
+    ...
+except ImportError as e:
+    Inheritance = ImportError(e)
+    ...
