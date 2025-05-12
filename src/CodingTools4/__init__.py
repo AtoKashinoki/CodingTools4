@@ -5,12 +5,6 @@ This library provides several modules to facilitate Python development.\n
 Homepage = https://github.com/AtoKashinoki/CodingTools4
 """
 
-""" Execute block """
-
-
-if __name__ == '__main__':
-    raise RuntimeError("This file is part of CodingTools4.")
-
 
 """
     Import modules
