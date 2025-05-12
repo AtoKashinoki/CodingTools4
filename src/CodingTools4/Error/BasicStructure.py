@@ -20,7 +20,6 @@ class Structure(Inheritance, Exception):
 
     def __init__(
             self,
-            *_,
             **kwargs: str
     ):
         """ Initialize message """
