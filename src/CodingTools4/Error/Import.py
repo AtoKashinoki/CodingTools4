@@ -14,7 +14,7 @@ from .BasicStructure import create_structure
     Import errors
 """
 
-
+# noinspection PyShadowingBuiltins
 ImportError = create_structure(ImportError)
 
 
