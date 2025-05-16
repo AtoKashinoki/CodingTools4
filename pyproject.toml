@@ -4,7 +4,7 @@ build-backend = 'setuptools.build_meta'
 
 
 [project]
-name = 'CodingTools4-Error'
+name = 'CodingTools4-[]'
 version = '1.0.0'
 description = 'This library provides several modules to facilitate Python development.'
 
