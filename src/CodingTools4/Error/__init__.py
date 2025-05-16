@@ -13,5 +13,6 @@ try:
     from .BasicStructure import Structure
     ...
 except ImportError as e:
-    Structure = ImportError(e)
+    from .Import import PackageError
+    Structure = PackageError(e)
     ...
