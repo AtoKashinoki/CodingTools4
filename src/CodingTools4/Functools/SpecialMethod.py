@@ -22,6 +22,7 @@ def initialize(*args, **kwargs) -> Any:
 """ __repr__ method """
 
 
+# noinspection PyPep8Naming
 @initialize()
 class __repr__:
 
