@@ -12,6 +12,7 @@ from typing import Any
 from time import time
 
 from ..BasicStructure.Inheritance import Inheritance
+from ..Functools.SpecialMethod import __repr__
 
 
 """
@@ -23,6 +24,7 @@ class Structure(Inheritance, Exception):
     """ Error structure """
 
     """ Initialize """
+    __kwargs__: dict[str, Any]
 
     def __init__(
             self,
@@ -36,14 +38,9 @@ class Structure(Inheritance, Exception):
 
     def __repr__(self) -> str:
         """ Return self class settings """
-        kwargs_text = ", ".join(
-            f"{key}={value.__repr__()}"
-            for key, value in self.__kwargs__.items()
-        )
-        return f"{self.__class__.__name__}({kwargs_text})"
+        return str(__repr__(self, **self.__kwargs__))
 
     """ message """
-    __kwargs__: dict[str, Any]
     __message__: str
     @property
     def message(self) -> str: return self.__message__

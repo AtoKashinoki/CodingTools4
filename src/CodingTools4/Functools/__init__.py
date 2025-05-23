@@ -1,0 +1,4 @@
+""" CodingTools4.Functools
+
+
+"""

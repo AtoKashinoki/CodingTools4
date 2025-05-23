@@ -11,6 +11,6 @@ except ImportError as e:
 
 
 if __name__ == '__main__':
-    print(BasicStructureA)
+    print(eval(repr(BasicStructureA)))
     raise BasicStructureA
     ...
