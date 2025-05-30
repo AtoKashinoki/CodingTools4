@@ -1,6 +1,6 @@
 """ Functools.SpecialMethod
-
-
+This module provides a mechanism for the purpose of assisting special methods.
+このmoduleは特殊メソッドの補助を目的とした仕組みを提供します。
 """
 
 
@@ -24,7 +24,8 @@ def initialize(*args, **kwargs) -> Any:
 
 # noinspection PyPep8Naming
 @initialize()
-class __repr__:
+class Repr:
+    """ __repr__ special method object """
 
     """ settings """
 
@@ -85,4 +86,4 @@ class __repr__:
     ...
 
 
-__repr__: __repr__
+__repr__: Repr = Repr()
