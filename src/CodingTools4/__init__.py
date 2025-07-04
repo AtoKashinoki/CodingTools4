@@ -25,3 +25,4 @@ try:
 except ImportError as e:
     BasicStructure = ImportError(e)
     ...
+

@@ -45,6 +45,8 @@ This library provides several modules to facilitate Python development.
   - Functools
     - \_\_init__.py
     - Attr.py
+    - SpecialMethod.py
+    - Decorator.py
   
   - OS
     - \_\_init__.py

@@ -9,22 +9,19 @@ This module provides a mechanism for the purpose of assisting special methods.
 
 from typing import Any
 
+from .Decorator import initialize
+
 
 """
     Special methods
 """
 
 
-def initialize(*args, **kwargs) -> Any:
-    return lambda func: func(*args, **kwargs)
-
-
 """ __repr__ method """
 
 
-# noinspection PyPep8Naming
 @initialize()
-class Repr:
+class __repr__:
     """ __repr__ special method object """
 
     """ settings """
@@ -86,4 +83,4 @@ class Repr:
     ...
 
 
-__repr__: Repr = Repr()
+__repr__: __repr__
