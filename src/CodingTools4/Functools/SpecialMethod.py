@@ -26,9 +26,9 @@ class __repr__:
 
     """ settings """
 
-    settings_sep = ", "
-    format_text = "{}({})"
-    attr_e_message = "'{}' object has no attribute '__repr__'."
+    __settings_sep = ", "
+    __format_text = "{}({})"
+    __attr_e_message = "'{}' object has no attribute '__repr__'."
 
     """ process """
     def __call__(
@@ -40,40 +40,35 @@ class __repr__:
         """ Return class settings that create from args """
 
         # argument setting text
-        args_text = self.settings_sep.join(args)
+        args_text = self.__settings_sep.join(args)
 
-        try:
+        kw_settings = dict()
+        for key, value in kwargs.items():
 
-            kw_settings = dict()
-            for key, value in kwargs.items():
+            if isinstance(value, type):
+                result = value.__name__
+                ...
+            else:
+                result = value.__repr__()
+                ...
 
-                if isinstance(value, type):
-                    result = value.__name__
-                    ...
-                else:
-                    result = value.__repr__()
-                    ...
+            if result[0] == "<" and result[-1] == ">":
+                raise AttributeError(self.__attr_e_message.format(
+                    value.__class__.__name__
+                ))
+            kw_settings[key] = result
+            continue
 
-                if result[0] == "<" and result[-1] == ">":
-                    raise AttributeError(self.attr_e_message.format(
-                        value.__class__.__name__
-                    ))
-                kw_settings[key] = result
-                continue
-
-            kwargs_text = self.settings_sep.join(
-                f"{key}={setting}"
-                for key, setting in kw_settings.items()
-            )
-            ...
-
-        except AttributeError as e:
-            return e
+        kwargs_text = self.__settings_sep.join(
+            f"{key}={setting}"
+            for key, setting in kw_settings.items()
+        )
+        ...
 
         # return initialize text
-        return self.format_text.format(
+        return self.__format_text.format(
             ins.__class__.__name__,
-            self.settings_sep.join([
+            self.__settings_sep.join([
                 value
                 for value in (args_text, kwargs_text)
                 if len(value) > 0
@@ -81,6 +76,3 @@ class __repr__:
         )
 
     ...
-
-
-__repr__: __repr__
